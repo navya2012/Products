@@ -2,12 +2,11 @@ import React from 'react'
 import Navbar from '../../Navbar/Navbar'
 import Categories from './Components/Categories'
 
-
-const Home = ({productDataList}) => {
+const Home = () => {
   return (
     <>
-        <Navbar/>
-        <Categories productDataList={productDataList}/>
+      <Navbar />
+      <Categories />
     </>
   )
 }
