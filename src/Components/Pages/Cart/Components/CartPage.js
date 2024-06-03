@@ -49,11 +49,11 @@ const CartPage = () => {
                             {cartProducts?.length > 0 ?
                                 cartProducts.map((card, index) => (
                                     <tr key={index} style={{ paddingBottom: '40px' }}>
-                                        <td style={{ maxWidth: '1000px' }}  ><img src={card.productImage} alt="" width='150px' height='80px' /></td>
+                                        <td style={{ maxWidth: '800px' }}  ><img src={card.productImage} alt="" width='150px' height='80px' /></td>
 
-                                        <td style={{ fontSize: '20px', maxWidth: '1000px' }} >{card.productName}</td>
+                                        <td style={{ fontSize: '20px', maxWidth: '300px' }} >{card.productName}</td>
 
-                                        <td style={{ maxWidth: '1000px' }} >
+                                        <td style={{ maxWidth: '2000px' }} >
                                             <button className='btn' onClick={() => { handleIncrement(card.productId) }}><FaPlus style={{ color: 'green' }} /></button>
 
                                             <input type="text" value={card.quantity} />
@@ -66,7 +66,7 @@ const CartPage = () => {
                                                 )
                                             }
                                         </td>
-                                        <td style={{ fontSize: '20px', maxWidth: '1000px' }}>
+                                        <td style={{ fontSize: '20px', maxWidth: '300px' }}>
                                             ₹ {card && card.quantity && card.price ? card.quantity * parseInt(card.price.replace(/,/g, '')) : 0}
                                         </td>
 
@@ -91,7 +91,7 @@ const CartPage = () => {
                                 }, 0)}
                             </p>
                         )}
-                        <Link to='#' className='checkout-button' >Proceed to Checkout</Link>
+                        <Link to='/checkout' className='checkout-button' >Proceed to Checkout</Link>
                         <Link to='/' style={{color:'grey', fontSize:'29px'}} ><span><FaArrowLeft /></span> Continue Shopping</Link>
                     </div>
                 </div>

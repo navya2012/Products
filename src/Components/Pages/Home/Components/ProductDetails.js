@@ -79,7 +79,7 @@ const ProductDetails = () => {
                               <img src={list.catImg} alt="" height='450px' />
                               <div className='cart-button-styles'>
                                 <button className='cart-button' onClick={() => { handleCart(list.id,list.productName,list.price,list.catImg) }}>Add to Cart</button>
-                                <Link to='/cart' className='pay-button'>Buy Now</Link>
+                                <Link to='/cart' onClick={() => { handleCart(list.id,list.productName,list.price,list.catImg) }} className='pay-button'>Buy Now</Link>
                               </div>
                             </div>
 

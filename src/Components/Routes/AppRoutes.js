@@ -7,6 +7,7 @@ import PageNotFound from './PageNotFound'
 import Cart from '../Pages/Cart/Cart'
 import { useSearchData } from '../Navbar/searchData/SearchProvider'
 import SearchData from '../Navbar/searchData/SearchData'
+import CartPayment from '../Pages/Cart/Components/CartPayment'
 
 
 const AppRoutes = () => {
@@ -24,7 +25,7 @@ const AppRoutes = () => {
             <Route path='/:categoryName' exact element={<CategoryProducts />} />
             <Route path='/:categoryName/:categoryProductName/:productName/:productId' exact element={<ProductDetails />} />
             <Route path='/cart' exact element={<Cart />} />
-            <Route path='/:name/:id' exact element={<ProductDetails />} />
+            <Route path='/checkout' exact element={<CartPayment />} />
             <Route path='*' exact element={<PageNotFound />} />
           </Routes>
         )
