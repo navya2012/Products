@@ -1,0 +1,122 @@
+/* navbar styles */
+
+nav{
+    background-color: rgb(2, 2, 2);
+    padding: 0 70px;
+   
+}
+nav  ul .search-input{
+    width: 700px;
+    padding: 5px 50px 0;
+}
+.navbar{
+    position: fixed;
+    z-index: 9999999999;
+    width: 100%;
+}
+
+
+@media(max-width: 500px){
+    nav{
+        padding: 0 0px ;
+    }
+    nav  ul .search-input{
+        width: 300px;
+        padding: 10px 0;
+    }
+}
+
+/* sliders */
+
+.slider-container{
+    overflow: hidden;
+    position: relative;
+    top: 64px;
+    
+}
+
+.slider-container img{
+    width: 100%;
+    height:400px;
+    overflow: hidden;
+}
+
+/* footer */
+
+.footer-container{
+    background-color: rgb(2, 2, 2);
+        color: white;
+    font-size: 18px;
+    padding: 60px;
+}
+.footer-container .top-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px;
+}
+.footer-container .footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.footer-container .footer-links a{
+    color: white;
+  text-decoration: underline;
+}
+
+/* footer-data */
+.footer-data{
+    padding: 130px 0 50px;
+}
+.footer-data .footer-dataStyles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 80px;
+    line-height: 2.5;
+    flex-wrap: wrap;
+    padding: 0 130px;
+
+} 
+.footer-data .footer-dataStyles > div {
+    flex: 1 1 calc(50% - 80px); 
+    box-sizing: border-box;
+    min-width: 300px; 
+}
+
+@media(max-width:500px){
+    .footer-data{
+        padding: 80px 50px;
+    }
+
+}
+
+/* contact */
+.contact-container{
+    position: relative;
+    top: 80px;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 50px 50px 50px 100px;
+    width: 100%;
+    line-height: 2;
+    gap: 50px;
+}
+.contact-container .contact-details{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+

@@ -12,13 +12,13 @@ const Categories = () => {
             <div className='Categories-container'>
                 <h1 style={{ color: 'green' }}>Categories</h1>
 
-                <div className='row container py-5'>
+                <div className='row  py-5'>
                     {
                         products.length > 0 ? (
                             products.map((item, index) => {
                                 return (
                                     <>
-                                        <div className='col-4 card-items ' key={index}>
+                                        <div className='col-lg-4 col-md-6  card-items ' key={index}>
                                             <Link to={`${item.cat_name}`}>
                                                 <h3 style={{ color: 'purple' }} >{item.cat_name.toUpperCase()}</h3>
                                                 <img src={item.image} alt="" width='200px' height='200px' />

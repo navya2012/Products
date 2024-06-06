@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
-import Navbar from '../../../Navbar/Navbar'
 import '../../../CSSModules/Products.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { addAddress, selectAddress } from '../../../Redux/Slices/paymentSlice';
 import { RiCloseLargeFill } from "react-icons/ri";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { BiFontSize } from 'react-icons/bi';
 
 
 
@@ -86,7 +84,6 @@ const CartPayment = () => {
     return (
         <>
             <div>
-                <Navbar />
 
                 <div className=' payment-container'  >
                     <h2 style={{ color: 'Highlight', paddingBottom: '20px' }}>Shipping Address:</h2>

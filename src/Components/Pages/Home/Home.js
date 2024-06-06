@@ -1,11 +1,12 @@
 import React from 'react'
-import Navbar from '../../Navbar/Navbar'
 import Categories from './Components/Categories'
+import ImageSliders from '../../Slider/ImageSliders'
+
 
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <ImageSliders/>
       <Categories />
     </>
   )

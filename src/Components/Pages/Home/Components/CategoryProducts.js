@@ -1,7 +1,6 @@
 import React from 'react'
 import '../../../CSSModules/Products.css'
 import { Link, useParams } from 'react-router-dom'
-import Navbar from '../../../Navbar/Navbar'
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { useProductsData } from '../../../Data/DataProvider';
 
@@ -13,37 +12,34 @@ const CategoryProducts = () => {
     //console.log('category products', products)
 
     const category = products.filter((item) => item.cat_name === categoryName)
-    //console.log('category name', category)
+    console.log('category name', category)
     return (
         <>
-            <div>
-                <Navbar />
-
-                <div style={{ paddingTop: '65px' }} >
+                <div className='categories-products-container'>
                     <Breadcrumb className='breadcrumb'>
                         <Breadcrumb.Item className='breadcrumb-item'><Link to='/'>{categoryName}</Link></Breadcrumb.Item>
                     </Breadcrumb>
 
-                    <div className='container'>
+                    <div className='categories-products-cards'>
                         <div className='row '>
                             {
-                                category.length > 0 ? (
-                                    category.map((data) =>
-                                        data.items.length > 0 && data.items.map((data, index) => {
+                                category?.length > 0 ? (
+                                    category?.map((data) =>
+                                        data?.items?.length > 0 && data?.items?.map((data, index) => {
                                             return (
                                                 <>
                                                     <div className='col-12' key={index}>
-                                                        <h2 className='py-4' style={{ color: 'purple' }} >{data.cat_name.toUpperCase()}</h2>
-                                                        <div className='row'>
+                                                        <h1 className='py-4' style={{ color: 'purple' }} >{data.cat_name?.toUpperCase()}</h1>
+                                                        <div className='categories-products-styles' >
                                                             {
-                                                                data.products.length > 0 && data.products.map((item, index) => {
+                                                                data?.products?.length > 0 && data?.products?.map((item, index) => {
                                                                     return (
                                                                         <>
-                                                                            <div key={index} className='col-lg-3 col-md-4 category-card'>
-                                                                                <Link to={`${data.cat_name}/${item.productName}/${item.id}`} >
-                                                                                    <h4 className='py-3'>{item.productName}</h4>
-                                                                                    <img src={item.catImg} alt="" width='200px' height='200px' />
-                                                                                    <h4 className='py-4'>Price: ₹  {item.price}</h4>
+                                                                            <div key={index} className=' category-card'>
+                                                                                <Link to={`${data?.cat_name}/${item.productName}/${item.id}`} >
+                                                                                    <h4 className='py-2'>{item?.productName}</h4>
+                                                                                    <img src={item?.catImg} alt="" width='200px' height='200px' />
+                                                                                    <h4 className='py-2'>Price: ₹  {item?.price}</h4>
                                                                                 </Link>
                                                                             </div>
                                                                         </>
@@ -63,7 +59,6 @@ const CategoryProducts = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </>
     )
 }

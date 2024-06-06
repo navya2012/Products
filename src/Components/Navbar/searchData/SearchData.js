@@ -2,7 +2,6 @@ import React from 'react'
 import { useSearchData } from './SearchProvider'
 import { Link } from 'react-router-dom'
 import '../../CSSModules/Products.css'
-import Navbar from '../Navbar'
 
 const SearchData = () => {
   const { searchResults } = useSearchData()
@@ -10,7 +9,6 @@ const SearchData = () => {
   return (
     <>
       <div>
-        <Navbar />
         <div className='container' style={{ paddingTop: '100px' }}>
           <div className='row'>
             {
