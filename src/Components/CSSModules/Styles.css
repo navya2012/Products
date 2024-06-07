@@ -72,7 +72,7 @@ nav  ul .search-input{
 
 /* footer-data */
 .footer-data{
-    padding: 130px 0 50px;
+    padding: 100px 0 50px;
 }
 .footer-data .footer-dataStyles{
     width: 100%;
@@ -100,14 +100,12 @@ nav  ul .search-input{
 
 /* contact */
 .contact-container{
-    position: relative;
-    top: 80px;
     background-color: lightgoldenrodyellow;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-wrap: wrap;
-    padding: 50px 50px 50px 100px;
+    padding: 100px 50px 80px 100px;
     width: 100%;
     line-height: 2;
     gap: 50px;
@@ -119,4 +117,8 @@ nav  ul .search-input{
     gap: 20px;
 }
 
-
+@media(max-width:500px){
+    .contact-container{
+        padding: 30px;
+    }
+}

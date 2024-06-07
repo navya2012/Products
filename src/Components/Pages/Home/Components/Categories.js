@@ -10,15 +10,15 @@ const Categories = () => {
     return (
         <>
             <div className='Categories-container'>
-                <h1 style={{ color: 'green' }}>Categories</h1>
+                <h1 style={{ color: 'purple' }}>Categories</h1>
 
-                <div className='row  py-5'>
+                <div className='categories-cards'>
                     {
                         products.length > 0 ? (
                             products.map((item, index) => {
                                 return (
                                     <>
-                                        <div className='col-lg-4 col-md-6  card-items ' key={index}>
+                                        <div className=' categories-card-items ' key={index}>
                                             <Link to={`${item.cat_name}`}>
                                                 <h3 style={{ color: 'purple' }} >{item.cat_name.toUpperCase()}</h3>
                                                 <img src={item.image} alt="" width='200px' height='200px' />

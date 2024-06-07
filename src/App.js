@@ -3,8 +3,7 @@ import { BrowserRouter, } from 'react-router-dom';
 import './App.css';
 import AppRoutes from './Components/Routes/AppRoutes';
 import DataProvider from './Components/Data/DataProvider';
-import SearchProvider from './Components/Navbar/searchData/SearchProvider';
-
+import SearchProvider from './Components/Containers/Navbar/searchData/SearchProvider';
 
 
 function App() {

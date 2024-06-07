@@ -1,6 +1,6 @@
 
 import React, { createContext, useContext, useState } from 'react'
-import { useProductsData } from '../../Data/DataProvider';
+import { useProductsData } from '../../../Data/DataProvider';
 
 
 const SearchContext = createContext()

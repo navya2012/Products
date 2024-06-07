@@ -1,5 +1,5 @@
 import React from 'react'
-import '../CSSModules/Styles.css'
+import '../../CSSModules/Styles.css'
 import { BsCartPlus } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi';

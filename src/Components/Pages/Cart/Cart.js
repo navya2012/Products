@@ -4,9 +4,7 @@ import CartPage from './Components/CartPage'
 const Cart = () => {
   return (
     <>
-         <div className='cart-container'>
-                <CartPage/>
-        </div>
+      <CartPage />
     </>
   )
 }

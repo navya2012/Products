@@ -72,7 +72,7 @@ const ProductDetails = () => {
                 return (
                   <>
                     <div className='product-cards' key={index}>
-                      <div>
+                      <div className=''>
                         <img src={list.catImg} alt="" height='450px' />
                         <div className='cart-button-styles'>
                           <button className='cart-button' onClick={() => { handleCart(list.id, list.productName, list.price, list.catImg) }}>Add to Cart</button>

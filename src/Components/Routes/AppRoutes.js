@@ -5,13 +5,13 @@ import CategoryProducts from '../Pages/Home/Components/CategoryProducts'
 import ProductDetails from '../Pages/Home/Components/ProductDetails'
 import PageNotFound from './PageNotFound'
 import Cart from '../Pages/Cart/Cart'
-import { useSearchData } from '../Navbar/searchData/SearchProvider'
-import SearchData from '../Navbar/searchData/SearchData'
 import CartPayment from '../Pages/Cart/Components/CartPayment'
-import Navbar from '../Navbar/Navbar'
-import Footer from '../Footer/Footer'
-import FooterData from '../Footer/FooterData'
 import Contact from '../Pages/Contact/Contact'
+import Navbar from '../Containers/Navbar/Navbar'
+import Footer from '../Containers/Footer/Footer'
+import FooterData from '../Containers/Footer/FooterData'
+import SearchData from '../Containers/Navbar/searchData/SearchData'
+import { useSearchData } from '../Containers/Navbar/searchData/SearchProvider'
 
 
 const AppRoutes = () => {

@@ -83,10 +83,8 @@ const CartPayment = () => {
     }
     return (
         <>
-            <div>
-
                 <div className=' payment-container'  >
-                    <h2 style={{ color: 'Highlight', paddingBottom: '20px' }}>Shipping Address:</h2>
+                    <h2 style={{ color: 'purple', paddingBottom: '20px' }}>Shipping Address:</h2>
 
                     <div>
                         {
@@ -129,7 +127,7 @@ const CartPayment = () => {
                             <div className='forms' style={{ display: 'block' }}>
                                 <div className=" form-style">
                                     <div className='address-heading'>
-                                        <h2>Enter a new address for delivery </h2>
+                                        <h2 style={{color:'green'}}>Enter a new address for delivery </h2>
                                         <RiCloseLargeFill onClick={() => setShowForm(!showForm)} className='close-icon' />
                                     </div>
 
@@ -176,10 +174,10 @@ const CartPayment = () => {
                                     </div>
 
                                     <div>
-                                        <h2 style={{ color: 'Highlight', padding: '20px 0' }}>Payment Order :</h2>
+                                        <h2 style={{ color: 'purple', padding: '20px 0' }}>Payment Order :</h2>
 
                                         {cartProducts?.length > 0 && (
-                                            <h4>
+                                            <h4 >
                                                 Total Price: ₹ {cartProducts.reduce((total, card) => {
                                                     return total + card.quantity * (card.price ? parseInt(card.price.replace(/,/g, '')) : 0)
                                                 }, 0)}
@@ -193,7 +191,6 @@ const CartPayment = () => {
                         }
                     </div>
                 </div>
-            </div>
             <ToastContainer />
         </>
     )

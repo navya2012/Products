@@ -34,8 +34,8 @@ const CartPage = () => {
     }
     return (
         <>
-            <div className='container' style={{ paddingTop: '100px' }}>
-                <h2>Cart Items</h2>
+            <div className='cart-container'>
+                <h1 style={{color:'purple'}}>CART ITEMS</h1>
                 <div className='cart-card-container '>
                     <table className="table table-borderless table-responsive">
                         <thead >
@@ -85,7 +85,7 @@ const CartPage = () => {
 
                     <div className='cart-footer-row'>
                         {cartProducts?.length > 0 && (
-                            <p>
+                            <p style={{color:'green'}}>
                                 Total Price: ₹ {cartProducts.reduce((total, card) => {
                                     return total + card.quantity * (card.price ? parseInt(card.price.replace(/,/g, '')) : 0)
                                 }, 0)}

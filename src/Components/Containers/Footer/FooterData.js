@@ -1,7 +1,7 @@
 // src/components/FooterData.js
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import '../CSSModules/Styles.css';
+import '../../CSSModules/Styles.css';
 
 const FooterData = () => {
     const { section } = useParams();

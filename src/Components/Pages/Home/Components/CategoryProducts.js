@@ -21,7 +21,6 @@ const CategoryProducts = () => {
                     </Breadcrumb>
 
                     <div className='categories-products-cards'>
-                        <div className='row '>
                             {
                                 category?.length > 0 ? (
                                     category?.map((data) =>
@@ -56,7 +55,6 @@ const CategoryProducts = () => {
                                     <h1 className='text-center'>No Products Found </h1>
                                 )
                             }
-                        </div>
                     </div>
                 </div>
         </>
